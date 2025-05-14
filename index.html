@@ -1,170 +1,112 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planilha de Precificação Jurídica</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Montserrat', sans-serif;
-            background-color: #ffffff;
-            color: #1C1C1C;
-            line-height: 1.6;
-        }
-        .container {
-            width: 90%;
-            max-width: 900px;
-            margin: auto;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 40px;
-            margin-bottom: 20px;
-        }
-        h2, h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 18px;
-            color: #8A7E76;
-            margin-bottom: 20px;
-        }
-        .button {
-            display: inline-block;
-            background-color: #3F6D5A;
-            color: #ffffff;
-            padding: 15px 30px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            margin-top: 30px;
-            transition: background-color 0.3s ease;
-        }
-        .button:hover {
-            background-color: #355d4d;
-        }
-        .section {
-            padding: 60px 0;
-            border-bottom: 1px solid #f0f0f0;
-        }
-        .section.light {
-            background-color: #E8E6E2;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            margin-bottom: 12px;
-            font-size: 18px;
-            text-align: left;
-            position: relative;
-            padding-left: 30px;
-        }
-        ul li::before {
-            content: "✔️";
-            position: absolute;
-            left: 0;
-            color: #C5A880;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-        footer {
-            padding: 40px 20px;
-            font-size: 14px;
-            color: #8A7E76;
-        }
-        .social-links a {
-            margin: 0 10px;
-            color: #8A7E76;
-            text-decoration: none;
-            font-size: 18px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planilha de Precificação Jurídica | Mariana Gomes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Montserrat', sans-serif; background: #ffffff; color: #1C1C1C; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    p { margin: 16px 0; }
+    .section { padding: 60px 20px; text-align: center; animation: fadeIn 1.2s ease forwards; opacity: 0; }
+    .grey-bg { background: #E8E6E2; }
+    .button { background: #3F6D5A; color: white; padding: 15px 35px; border: none; font-size: 18px; border-radius: 8px; cursor: pointer; text-decoration: none; display: inline-block; margin-top: 20px; transition: 0.3s ease; }
+    .button:hover { background: #5a8d75; transform: scale(1.05); }
+    .features { display: flex; flex-direction: column; gap: 30px; margin-top: 40px; align-items: center; }
+    .feature-box { background: white; padding: 30px; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.05); width: 90%; max-width: 320px; }
+    .icon { font-size: 40px; color: #5a8d75; margin-bottom: 10px; }
+    img { width: 100%; max-width: 900px; border-radius: 10px; }
+    footer { padding: 20px; background: #ffffff; text-align: center; font-size: 14px; color: #8A7E76; }
+    @keyframes fadeIn { 0% { opacity: 0; transform: translateY(40px); } 100% { opacity: 1; transform: translateY(0); } }
+    @media (min-width: 768px) {
+      .features { flex-direction: row; justify-content: center; }
+    }
+  </style>
 </head>
-
 <body>
 
-    <div class="container">
-        <img src="COLE_AQUI_LINK_DA_SUA_FOTO" alt="Mariana Gomes">
-        <h1>Parar de chutar preço é o primeiro passo pra começar a ser levado a sério.</h1>
-        <p>Uma ferramenta simples e estratégica pra você precificar seus contratos com clareza, margem e confiança — mesmo que esteja começando agora.</p>
-        <a href="https://pay.kiwify.com.br/G8n9cZy" class="button">QUERO COMEÇAR COM CLAREZA</a>
-    </div>
+<section class="section">
+  <img src="assets/hero.png" alt="Mariana Gomes Hero">
+  <h1>Parar de chutar preço é o primeiro passo pra começar a ser levado a sério.</h1>
+  <p>Uma ferramenta simples e estratégica pra você precificar seus contratos com clareza, margem e confiança — mesmo que esteja começando agora.</p>
+  <a href="https://pay.kiwify.com.br/G8n9cZy" target="_blank" class="button">Quero começar com clareza</a>
+</section>
 
-    <div class="container section">
-        <h2>Você já se sentiu assim?</h2>
-        <p>Já cobrou um valor e ficou inseguro(a)?</p>
-        <p>Já pensou "acho que cobrei errado..."?</p>
-        <p>Já aceitou qualquer preço só para não perder o cliente?</p>
-        <p>Isso não é falta de capacidade. É falta de estrutura — e é isso que eu quero te entregar.</p>
-    </div>
+<section class="section grey-bg">
+  <h2>Você já cobrou um valor e ficou inseguro(a)?</h2>
+  <p>Já pensou "acho que cobrei errado...?"</p>
+  <p>Já aceitou qualquer preço só para não perder o cliente?</p>
+  <h3>Isso não é falta de capacidade. É falta de estrutura — e é isso que eu quero te entregar.</h3>
+</section>
 
-    <div class="container section light">
-        <h2>Uma ferramenta prática para te dar clareza e segurança</h2>
-        <p>Minha Planilha de Precificação Jurídica + Aula Explicativa vão te entregar direção prática, baseada na realidade da advocacia.</p>
-        <img src="COLE_AQUI_LINK_DO_MOCKUP_DA_PLANILHA" alt="Mockup da Planilha">
-    </div>
+<section class="section">
+  <h2>A solução que você precisa</h2>
+  <p>Minha <strong>Planilha de Precificação Jurídica + Aula Explicativa</strong> vão te entregar direção prática, baseada na realidade da advocacia.</p>
+  <p><em>Chega de insegurança. É hora de precificar com método.</em></p>
+  <img src="assets/planilha.png" alt="Planilha de Precificação Jurídica">
+</section>
 
-    <div class="container section">
-        <h2>Você vai receber:</h2>
-        <ul>
-            <li>Planilha editável no Google Sheets</li>
-            <li>Aula explicativa (curta, direta e prática)</li>
-            <li>Mini Pack de Frases para Propostas Jurídicas (PDF)</li>
-            <li>Checklist de Proposta Irrecusável (para os 10 primeiros)</li>
-        </ul>
-    </div>
+<section class="section grey-bg">
+  <h2>O que você vai receber</h2>
+  <ul style="list-style:none; padding:0; text-align:left; max-width:600px; margin:20px auto;">
+    <li><strong>Planilha editável no Google Sheets:</strong> acesso imediato.</li>
+    <li><strong>Aula explicativa:</strong> curta, direta e prática.</li>
+    <li><strong>Mini Pack de Frases para Propostas Jurídicas:</strong> modelos prontos.</li>
+    <li><strong>Checklist de Proposta Irrecusável:</strong> para os primeiros compradores.</li>
+  </ul>
+</section>
 
-    <div class="container section light">
-        <h2>Benefícios:</h2>
-        <ul>
-            <li>Agilidade na precificação</li>
-            <li>Segurança para cobrar com margem justa</li>
-            <li>Organização prática na sua advocacia</li>
-        </ul>
+<section class="section">
+  <h2>Benefícios diretos para sua advocacia</h2>
+  <div class="features">
+    <div class="feature-box">
+      <div class="icon">⚡</div>
+      <h3>Agilidade na precificação</h3>
+      <p>Reduza o tempo de propostas e tenha respostas rápidas.</p>
     </div>
-
-    <div class="container section">
-        <h2>Depoimentos:</h2>
-        <p>"Depois de começar a usar a planilha, precificar se tornou muito mais seguro e rápido!"</p>
+    <div class="feature-box">
+      <div class="icon">🛡️</div>
+      <h3>Segurança para cobrar</h3>
+      <p>Defina valores com margem justa e confiança.</p>
     </div>
-
-    <div class="container section light">
-        <h2>Investimento</h2>
-        <h3>R$ 97,00</h3>
-        <p>Pagamento via Pix, Cartão ou Link direto. Sem assinatura. Sem mensalidade.</p>
-        <a href="https://pay.kiwify.com.br/G8n9cZy" class="button">QUERO COMEÇAR COM CLAREZA</a>
+    <div class="feature-box">
+      <div class="icon">🏢</div>
+      <h3>Organização prática</h3>
+      <p>Estruture sua precificação de forma profissional.</p>
     </div>
+  </div>
+</section>
 
-    <div class="container section">
-        <h2>Garantia de 7 dias</h2>
-        <p>Se você sentir que o produto não ajudou, me chama. Sem burocracia, sem desgaste. Devolvo o valor.</p>
-    </div>
+<section class="section grey-bg">
+  <h2>O que dizem sobre a planilha</h2>
+  <img src="assets/depoimentos.png" alt="Depoimentos">
+</section>
 
-    <div class="container section">
-        <h2>Pare de cobrar no escuro. Comece com clareza.</h2>
-        <a href="https://pay.kiwify.com.br/G8n9cZy" class="button">QUERO COMEÇAR COM CLAREZA</a>
-    </div>
+<section class="section">
+  <img src="assets/oferta.png" alt="Oferta e Preço">
+</section>
 
-    <footer>
-        <p>© 2025 Mariana Gomes. Todos os direitos reservados.</p>
-        <div class="social-links">
-            <a href="#">Instagram</a> |
-            <a href="#">WhatsApp</a>
-        </div>
-    </footer>
+<section class="section grey-bg">
+  <h2>Investimento</h2>
+  <p>De R$147,00<br><strong style="font-size:32px;">Por R$97,00</strong></p>
+  <p>Pagamento via Pix, Cartão ou Link Direto. Sem assinatura. Sem mensalidade.</p>
+  <a href="https://pay.kiwify.com.br/G8n9cZy" target="_blank" class="button">Quero começar com clareza</a>
+</section>
+
+<section class="section">
+  <img src="assets/garantia.png" alt="Garantia de 7 dias">
+</section>
+
+<section class="section">
+  <img src="assets/faq.png" alt="FAQ Perguntas Frequentes">
+</section>
+
+<footer>
+  © 2025 Mariana Gomes. Todos os direitos reservados.
+</footer>
 
 </body>
 </html>
